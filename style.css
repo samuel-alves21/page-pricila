@@ -1,0 +1,51 @@
+.section01 {
+  height: 100vh;
+  background: url('img/section01-background.jpg') no-repeat center;
+  background-position: cover;
+  margin: 0;
+
+  color: white;
+}
+
+h5, p {
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  background-color: #FF94D7;
+  height: 120px;
+  width: 70%;
+  border: none;
+  position: relative;
+}
+
+.div-img01 {
+  position: absolute;
+  bottom: 0;
+  width: 170px;
+}
+
+.card-text01 {
+  align-self: flex-end;
+  margin: auto 0;
+}
+
+@media screen and (max-width: 1100px) {
+  .div-img01 {
+    width: 100px;
+  }
+}
+
+
