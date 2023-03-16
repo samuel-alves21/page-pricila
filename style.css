@@ -10,6 +10,15 @@ p {
   margin: 0;
 }
 
+h5 {
+  font-size: calc(15px + 1vw);
+}
+
+p {
+  font-size: calc(10px + 1vw);
+}
+
+
 h2 {
   font-family: 'Playfair Display', serif;
   text-align: center;
@@ -28,7 +37,7 @@ h2 {
   background-color: #ff94d7;
   height: 120px;
   width: 80%;
-  min-width:280px;
+  min-width: 280px;
   border: none;
   position: relative;
 }
@@ -57,7 +66,7 @@ h2 {
   .card {
     height: 70px;
     width: 70%;
-    min-width:280px;
+    min-width: 280px;
     border: none;
     position: relative;
   }
@@ -65,7 +74,7 @@ h2 {
   .div-img01 {
     position: absolute;
     bottom: 0;
-    width: 40%;
+    width: 35%;
     max-width: 163px;
   }
 }
