@@ -1,32 +1,34 @@
 .section01 {
-  height: 100vh;
   background: url('img/section01-background.jpg') no-repeat center;
-  background-position: cover;
+  background-size: cover;
   margin: 0;
-
   color: white;
 }
 
-h5, p {
+h5,
+p {
   margin: 0;
 }
 
 h2 {
   font-family: 'Playfair Display', serif;
   text-align: center;
+  font-size: calc(20px + 3vw);
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 1.5vw;
 }
 
 .card {
   display: flex;
-  background-color: #FF94D7;
+  background-color: #ff94d7;
   height: 120px;
-  width: 70%;
+  width: 80%;
+  min-width:280px;
   border: none;
   position: relative;
 }
@@ -34,18 +36,36 @@ h2 {
 .div-img01 {
   position: absolute;
   bottom: 0;
-  width: 170px;
+  width: 50%;
+  max-width: 163px;
 }
 
 .card-text01 {
   align-self: flex-end;
-  margin: auto 0;
+  margin: auto 0 auto 0;
+  padding-left: 30px;
 }
 
-@media screen and (max-width: 1100px) {
-  .div-img01 {
-    width: 100px;
+@media screen and (max-width: 576px) {
+  .section01 {
+    background: url('img/section01-mobile-background.jpg') no-repeat center;
+    background-size: cover;
   }
 }
 
+@media screen and (max-height: 500px) and (orientation: landscape) { 
+  .card {
+    height: 70px;
+    width: 70%;
+    min-width:280px;
+    border: none;
+    position: relative;
+  }
 
+  .div-img01 {
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    max-width: 163px;
+  }
+}
