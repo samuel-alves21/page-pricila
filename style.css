@@ -57,7 +57,7 @@ h2 {
 
 @media screen and (max-width: 576px) {
   .section01 {
-    background: url('img/section01-mobile-background.jpg') no-repeat center;
+    background: url('img/section01-mobile-background.jpg') no-repeat top;
     background-size: cover;
   }
 }
